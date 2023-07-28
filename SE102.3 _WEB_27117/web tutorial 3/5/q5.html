@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        function getDayOfWeek() {
+        
+          const userInput = prompt("Enter a number from 1 to 7:");
+    
+          
+          const dayNumber = parseInt(userInput);
+    
+          
+          const daysOfWeek = [
+            "",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ];
+    
+          
+          if (isNaN(dayNumber) || dayNumber < 1 || dayNumber > 7) {
+            alert("Please enter a valid number between 1 and 7.");
+          } else {
+            
+            const dayName = daysOfWeek[dayNumber];
+    
+            
+            alert(`The day is: ${dayName}.`);
+          }
+        }
+      </script>
+    
+    
+      <script>
+        getDayOfWeek();
+      </script>
+</body>
+</html>

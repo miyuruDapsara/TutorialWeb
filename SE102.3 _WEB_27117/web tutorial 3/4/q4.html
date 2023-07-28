@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+const radiusInput = prompt("Enter the radius of the circle:");
+
+
+const radius = parseFloat(radiusInput);
+
+
+if (isNaN(radius) || radius <= 0) {
+  alert("Please enter a valid positive number for the radius.");
+} else {
+  
+  const pi = 22 / 7;
+  const area = pi * radius * radius;
+
+  
+  const roundedArea = area.toFixed(2);
+
+  
+  alert(`The area of the circle with radius ${radius} is ${roundedArea}.`);
+}
+    </script>
+</body>
+</html>

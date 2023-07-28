@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('images.jpeg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100%;
+        }
+        .form-container {
+            background-color: rgb(52, 54, 49);
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #1b1818;
+            border-radius: 10px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            color: goldenrod;
+        }
+        .form-label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+        }
+        .form-radio-group {
+            display: flex;
+            align-items: center;
+        }
+        .form-radio-group input[type="radio"] {
+            margin-right: 5px;
+        }
+        .form-checkbox-group {
+            display: flex;
+            align-items: center;
+        }
+        .form-checkbox-group input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        .form-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .form-buttons button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            outline: none;
+        }
+        .form-buttons button.submit-btn {
+            background-color: #007bff;
+            color: #fff;
+        }
+        .form-buttons button.cancel-btn {
+            background-color: #ccc;
+            color: #000;
+        }
+
+        .button-panel{
+
+            background-color: rgb(210, 210, 101);
+        }
+        .footer{
+            background-color: rgb(210, 210, 101);
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form>
+            <div class="form-group">
+                <div class="footer"><center>Sign up</center></div>
+
+                <label for="firstname" class="form-label">First Name:</label>
+                <input type="text" id="firstname" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <label for="lastname" class="form-label">Last Name:</label>
+                <input type="text" id="lastname" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <label for="dob" class="form-label">Date of Birth:</label>
+                <input type="date" id="dob" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <label class="form-label">Gender:</label>
+                <div class="form-radio-group">
+                    <input type="radio" name="gender" id="male" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female" value="female" required>
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="other" value="other" required>
+                    <label for="other">Other</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="country" class="form-label">Country:</label>
+                <select id="country" class="form-input" required>
+                    <option value="">Select Country</option>
+                    <!-- Add your country options here -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" id="email" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <label for="phone" class="form-label">Phone:</label>
+                <input type="tel" id="phone" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <label for="password" class="form-label">Password:</label>
+                <input type="password" id="password" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm_password" class="form-label">Confirm Password:</label>
+                <input type="password" id="confirm_password" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <div class="form-checkbox-group">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">I agree to the terms of use</label>
+                </div>
+            </div>
+
+            <div class="button-panel">
+            <div class="form-buttons">
+                <button type="submit" class="submit-btn">Submit</button>
+                <button type="button" class="cancel-btn">Cancel</button>
+            </div>
+           </div>
+        </form>
+    </div>
+</body>
+</html>

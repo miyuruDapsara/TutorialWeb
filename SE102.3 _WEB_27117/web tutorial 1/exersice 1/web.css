@@ -1,0 +1,25 @@
+body
+{
+    background-image: url('beautiful-sunset-beach-landscape-with-boat_1112-212.avif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+.background
+{
+    justify-content: center;
+    height: 250px;
+    padding: 60px;
+    margin: 0 50px;
+    background-color: #ede2e27b;
+    
+    
+}
+
+.text
+{
+    color: rgb(106, 106, 207);
+    align-items: flex-end;
+    justify-content: flex-end;
+}

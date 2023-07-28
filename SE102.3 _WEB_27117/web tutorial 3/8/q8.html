@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1>Enter your NIC Number:</h1>
+    <input type="text" id="nicNumber" placeholder="e.g., 1234567890123">
+    <button onclick="calculateYearOfBirth()">Calculate</button>
+    <p id="result"></p>
+
+    <script>
+        function calculateYearOfBirth() {
+            const nicNumber = document.getElementById("nicNumber").value;
+
+            const birthYear = "19" + nicNumber.substring(0, 2); 
+            
+            
+            document.getElementById("result").textContent = `Year of Birth: ${birthYear}`;
+        }
+    </script>
+</body>
+</html>
